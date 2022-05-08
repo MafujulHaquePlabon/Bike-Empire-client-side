@@ -12,7 +12,7 @@ const Banner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3 className="text-success"Welcome to Website></h3>
+      <h3 className="text-success">Welcome to Website</h3>
       <h5 className="text-success"></h5>
     </Carousel.Caption>
   </Carousel.Item>
