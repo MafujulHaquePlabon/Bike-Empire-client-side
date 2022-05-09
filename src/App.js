@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import Footer from './components/Shared/Footer/Footer';
 import ManageInventories from './components/ManageInventories/ManageInventories';
+import Notfound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Manage_Items" element={<SignUp></SignUp>}></Route>
         <Route path="/Add_Item" element={<SignUp></SignUp>}></Route>
         <Route path="/My_items" element={<SignUp></SignUp>}></Route>
+        <Route path="*" element={<Notfound></Notfound>}></Route>
     </Routes>
     <Footer></Footer>
     </div>
