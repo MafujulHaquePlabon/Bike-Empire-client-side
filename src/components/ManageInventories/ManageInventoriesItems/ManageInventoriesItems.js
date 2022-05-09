@@ -18,11 +18,6 @@ const ManageInventoriesItems = (props) => {
             <td style={{width:100}}>{supplier_name}</td>
           <td style={{width:100}}><button className="bg-danger border-0 rounded text-white fw-bolder">Delete</button></td>
           </tr>
-        {/*  <tr>
-            <td>3</td>
-            <td colSpan={2}>Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>  */}
         </tbody>
       </Table>
     );
