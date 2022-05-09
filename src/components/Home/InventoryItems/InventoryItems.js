@@ -1,9 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
-import { Link } from 'react-router-dom';
 import useInventoryItems from '../../../hooks/useInventoryItems';
-import ManageInventories from '../../ManageInventories/ManageInventories';
 import InventoryItem from '../InventoryItem/InventoryItem';
+
 
 const InventoryItems = () => {
     const [items,setItems]=useInventoryItems();
@@ -20,7 +19,7 @@ const InventoryItems = () => {
            }
         
        </div>
-       <button onClick={navigateManageInventories} type="submit" >ManageInventories</button>
+       <button className='bg-success my-5 fw-bolder  py-2 px-3 text-white border-0 rounded' onClick={navigateManageInventories} type="submit" >ManageInventories</button>
       </div>
     );
 };
