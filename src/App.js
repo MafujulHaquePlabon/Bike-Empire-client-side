@@ -12,6 +12,9 @@ import Footer from './components/Shared/Footer/Footer';
 import ManageInventories from './components/ManageInventories/ManageInventories';
 import Notfound from './components/NotFound/NotFound';
 import Contact from './components/Contact/Contact';
+import ManageItems from './components/Pages/ManageItems/ManageItems';
+import AddItem from './components/Pages/AddItem/AddItem';
+import MyItems from './components/Pages/MyItems/MyItems';
 
 function App() {
   return (
@@ -26,9 +29,9 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
         <Route path="/ManageInventories" element={<ManageInventories ></ManageInventories>}></Route>
-        <Route path="/Manage_Items" element={<SignUp></SignUp>}></Route>
-        <Route path="/Add_Item" element={<SignUp></SignUp>}></Route>
-        <Route path="/My_items" element={<SignUp></SignUp>}></Route>
+        <Route path="/Manage_Items" element={<ManageItems></ManageItems>}></Route>
+        <Route path="/Add_Item" element={<AddItem></AddItem>}></Route>
+        <Route path="/My_Items" element={<MyItems></MyItems>}></Route>
         <Route path="*" element={<Notfound></Notfound>}></Route>
     </Routes>
     <Footer></Footer>
