@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 
 const ManageInventoriesItems = (props) => {
      const {_id,name, img,description, price, quantity, supplier_name}=props.mInvItem ;
-  /*   console.log(props.item)  */
+  
 
     return (
         <Table  striped bordered hover>
