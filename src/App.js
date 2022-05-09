@@ -5,7 +5,6 @@ import { Route, Routes } from 'react-router';
 import Header from './components/Shared/Header/Header';
 import Home from './components/Home/Home';
 import Blog from './components/Blog/Blog';
-import About from './components/About/About';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import Footer from './components/Shared/Footer/Footer';
@@ -15,6 +14,7 @@ import Contact from './components/Contact/Contact';
 import ManageItems from './components/Pages/ManageItems/ManageItems';
 import AddItem from './components/Pages/AddItem/AddItem';
 import MyItems from './components/Pages/MyItems/MyItems';
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -29,7 +29,9 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
         <Route path="/ManageInventories" element={<ManageInventories ></ManageInventories>}></Route>
-        <Route path="/Manage_Items" element={<ManageItems></ManageItems>}></Route>
+        <Route path="/Manage_Items" element={ <RequireAuth>
+          <ManageItems></ManageItems>
+        </RequireAuth>}></Route>
         <Route path="/Add_Item" element={<AddItem></AddItem>}></Route>
         <Route path="/My_Items" element={<MyItems></MyItems>}></Route>
         <Route path="*" element={<Notfound></Notfound>}></Route>

@@ -1,12 +1,14 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
+import { useNavigate } from 'react-router';
 
 
 const InventoryItem = (props) => {
     const {_id,name, img,description, price, quantity, supplier_name}=props.item ;
+    const navigate=useNavigate();
     const navigateToInventoryItemDetail=id=>{
-      //  navigate(`\inventoryItem\${id}`);
+        navigate(`/Manage_Items`);
     }
    
     return (
