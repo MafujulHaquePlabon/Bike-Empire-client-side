@@ -11,7 +11,7 @@ const ManageInventories = () => {
              <div>
           <h2 className="mt-5 text-success ">Manage Inventories</h2>
           
-           <div  className="mt-5  " >
+           <div  className="mt-5" >
                <Table className="ms-auto"  striped bordered hover>
                <thead>
           <tr className="">
