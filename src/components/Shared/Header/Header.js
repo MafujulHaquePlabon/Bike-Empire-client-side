@@ -29,6 +29,7 @@ const Header = () => {
                         </Nav>
                         <Nav>
                         <Nav.Link className="fw-bolder hover:text-white"as={Link} to="Home" >Home</Nav.Link>
+                        <Nav.Link className="fw-bolder hover:text-white"as={Link} to="ContactUs" >Contact_Us</Nav.Link>
                        <Nav.Link className="fw-bolder hover:text-white"as={Link} to="ManageInventories" >Manage_Inventories</Nav.Link>
                           
                             <Nav.Link className="fw-bolder hover:text-white" as={Link} to="Blogs">
