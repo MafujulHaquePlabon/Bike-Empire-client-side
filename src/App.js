@@ -15,6 +15,8 @@ import ManageItems from './components/Pages/ManageItems/ManageItems';
 import AddItem from './components/Pages/AddItem/AddItem';
 import MyItems from './components/Pages/MyItems/MyItems';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import InventoryItem from './components/Home/InventoryItem/InventoryItem';
+
 
 function App() {
   return (
@@ -24,11 +26,11 @@ function App() {
     <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/ContactUs" element={<Contact></Contact>}></Route>
-        {/* <Route path='/Services/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route> */}
         <Route path="/Blogs" element={<Blog></Blog>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
         <Route path="/ManageInventories" element={<ManageInventories ></ManageInventories>}></Route>
+        <Route path="/Inventories/:id" element={<InventoryItem ></InventoryItem>}></Route>
         <Route path="/Manage_Items" element={ <RequireAuth>
           <ManageItems></ManageItems>
         </RequireAuth>}></Route>

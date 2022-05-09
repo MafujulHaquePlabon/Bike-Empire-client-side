@@ -1,16 +1,18 @@
 import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
-import { useNavigate } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 
 
 const InventoryItem = (props) => {
+    const {id}=useParams();
     const {_id,name, img,description, price, quantity, supplier_name}=props.item ;
     const navigate=useNavigate();
-    const navigateToInventoryItemDetail=id=>{
+     const navigateToInventoryItemDetail=id=>{
+        console.log(_id)
         navigate(`/Manage_Items`);
-    }
-   
+    } 
+    
     return (
        
 <CardGroup>
@@ -26,7 +28,7 @@ const InventoryItem = (props) => {
           <h5>Supplier_name: {supplier_name}</h5>
          </div>
     
-      <Button onClick={()=>navigateToInventoryItemDetail(_id)} className="bg-success text-white fw-bolder rounded px-4 py-2 border-0 " > Stock Update</Button>
+      <Button   onClick={()=>navigateToInventoryItemDetail(_id)}  className="bg-success text-white fw-bolder rounded px-4 py-2 border-0 " > Stock Update</Button>
     </Card.Body>
   </Card>
 </CardGroup>
