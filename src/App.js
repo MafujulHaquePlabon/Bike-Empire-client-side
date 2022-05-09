@@ -9,6 +9,7 @@ import About from './components/About/About';
 import Login from './components/Login/Login';
 import SignUp from './components/SignUp/SignUp';
 import Footer from './components/Shared/Footer/Footer';
+import ManageInventories from './components/ManageInventories/ManageInventories';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
+        <Route path="/ManageInventories" element={<ManageInventories ></ManageInventories>}></Route>
         <Route path="/Manage_Items" element={<SignUp></SignUp>}></Route>
         <Route path="/Add_Item" element={<SignUp></SignUp>}></Route>
         <Route path="/My_items" element={<SignUp></SignUp>}></Route>
