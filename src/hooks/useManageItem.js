@@ -4,7 +4,7 @@ import { useParams } from 'react-router';
 const useManageItem = () => {
     const [items,setItems]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/inventoryItems')
+        fetch('https://aqueous-tundra-23230.herokuapp.com/inventoryItems')
         .then(res=>res.json())
         .then(data=>setItems(data))
     },[]);
