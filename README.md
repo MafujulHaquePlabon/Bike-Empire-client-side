@@ -1,5 +1,5 @@
 # Warehouse Management Bike
-## Firebse live site link: [Click Here]().
+## Firebse live site link: [Click Here](https://warehouse-management-9612f.web.app/).
 * Route,useState,useEffect,destructring used of my project.
 * Home,Blogs,Contact,Manage_inventories,Manage_items,Add_Item,My_Items etc components and page used.
 * Bootstrap framework used in this project.
