@@ -38,7 +38,7 @@ const Header = () => {
                             {
                                  user ?
                                   <div className="d-flex mx-auto ">
-                                         <Nav.Link className="fw-bolder hover:text-white" as={Link}  to="Manage_Items">Manage_Items</Nav.Link>
+                                         <Nav.Link className="fw-bolder hover:text-white" as={Link}  to="/inventoryItems">Manage_Items</Nav.Link>
                                          <Nav.Link className="fw-bolder hover:text-white" as={Link}  to="Add_Item">Add_Item</Nav.Link>
                                          <Nav.Link className="fw-bolder hover:text-white" as={Link}  to="My_Items">My_items</Nav.Link>
                                         <Nav.Link className='btn btn-link fw-bolder hover:text-white text-decoration-none' onClick={handleSignOut}>Log Out</Nav.Link>

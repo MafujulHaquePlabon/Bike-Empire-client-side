@@ -76,7 +76,7 @@ const Login = () => {
                 </Button>
             </Form>
          {/*   {errorElement} */}
-            <p>New To Warehouse Management? <Link to="/SignUp" className='text-primary pe-auto text-decoration-none'/*  onClick={navigateSignUp} */>Please SignUp</Link> </p>
+            <p>New To Warehouse Management? <Link to="/SignUp" className='text-primary pe-auto text-decoration-none'>Please SignUp</Link> </p>
             <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
           
          <ToastContainer />

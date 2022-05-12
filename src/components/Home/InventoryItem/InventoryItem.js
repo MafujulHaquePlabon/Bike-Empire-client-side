@@ -5,12 +5,12 @@ import { useNavigate, useParams } from 'react-router';
 
 
 const InventoryItem = (props) => {
-    const {id}=useParams();
+    //const {id}=useParams();
     const {_id,name, img,description, price, quantity, supplier_name}=props.item ;
     const navigate=useNavigate();
      const navigateToInventoryItemDetail=id=>{
-        console.log(_id)
-        navigate(`/Manage_Items`);
+      //  console.log(_id)
+        navigate(`/inventoryItems/${id}`);
     } 
     
     return (

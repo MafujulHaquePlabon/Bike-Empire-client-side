@@ -62,16 +62,14 @@ const SignUp = () => {
              loading &&  <Spinner animation="border" variant="success" />
          }
          </p>
-             {/*    <input  onClick={() => setAgree(!agree)}  type="checkbox" name="terms" id="terms" /> */}
-               {/*  <label className={agree ? 'ps-2': 'ps-2 text-danger'} htmlFor="terms">Accept Genius Car Terms and Conditions</label> */}
-              {/*   <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Doctor Health_Sheba Terms and Conditions</label> */}
+             
                 <input
-                   /*   disabled={!agree}  */
+                 
                     className='w-50 mx-auto btn btn-info fw-bolder mt-2'
                     type="submit"
                     value="SignUp" />
             </form>
-            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none'/*  onClick={navigateLogin} */>Please Login</Link> </p>
+            <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none'>Please Login</Link> </p>
            <SocialLogin></SocialLogin>
         </div>
         </div>

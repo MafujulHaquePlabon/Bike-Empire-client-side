@@ -15,7 +15,7 @@ import ManageItems from './components/Pages/ManageItems/ManageItems';
 import AddItem from './components/Pages/AddItem/AddItem';
 import MyItems from './components/Pages/MyItems/MyItems';
 import RequireAuth from './components/RequireAuth/RequireAuth';
-import InventoryItem from './components/Home/InventoryItem/InventoryItem';
+
 
 
 function App() {
@@ -30,9 +30,10 @@ function App() {
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
         <Route path="/ManageInventories" element={<ManageInventories ></ManageInventories>}></Route>
-        <Route path="/Inventories/:id" element={<InventoryItem ></InventoryItem>}></Route>
-        <Route path="/Manage_Items" element={ <RequireAuth>
-          <ManageItems></ManageItems>
+        
+        
+        <Route path="/inventoryItems/:id" element={ <RequireAuth>
+        <ManageItems></ManageItems>
         </RequireAuth>}></Route>
         <Route path="/Add_Item" element={<AddItem></AddItem>}></Route>
         <Route path="/My_Items" element={<MyItems></MyItems>}></Route>
