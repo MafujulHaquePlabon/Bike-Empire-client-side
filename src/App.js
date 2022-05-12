@@ -12,9 +12,9 @@ import ManageInventories from './components/ManageInventories/ManageInventories'
 import Notfound from './components/NotFound/NotFound';
 import Contact from './components/Contact/Contact';
 import ManageItems from './components/Pages/ManageItems/ManageItems';
-import AddItem from './components/Pages/AddItem/AddItem';
 import MyItems from './components/Pages/MyItems/MyItems';
 import RequireAuth from './components/RequireAuth/RequireAuth';
+import AddItems from './components/Pages/AddItem/AddItems';
 
 
 
@@ -35,7 +35,7 @@ function App() {
         <Route path="/inventoryItems/:id" element={ <RequireAuth>
         <ManageItems></ManageItems>
         </RequireAuth>}></Route>
-        <Route path="/Add_Item" element={<AddItem></AddItem>}></Route>
+        <Route path="/Add_Item" element={<AddItems></AddItems>}></Route>
         <Route path="/My_Items" element={<MyItems></MyItems>}></Route>
         <Route path="*" element={<Notfound></Notfound>}></Route>
     </Routes>

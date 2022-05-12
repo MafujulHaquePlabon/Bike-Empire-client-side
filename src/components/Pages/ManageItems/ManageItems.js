@@ -9,13 +9,14 @@ import { useParams } from 'react-router';
 const ManageItems = () => {
     const {id} = useParams();
     const [mItems,setMItems]=useState({});
-    console.log(mItems)
+   // console.log(mItems)
     useEffect(()=>{
         fetch(` https://aqueous-tundra-23230.herokuapp.com/inventoryItems/${id}`)
         .then(res=>res.json())
         .then(data=>setMItems(data))
     }, []);
-    
+
+
 
    return (
       <div>
@@ -36,7 +37,7 @@ const ManageItems = () => {
          </div>
          <div>
          <Button /* onClick={()=>navigateToInventoryItemDetail(_id)} */  className="bg-success text-white fw-bolder rounded px-4 py-2 border-0 mb-3 " >delivered</Button>
-   <form/*  onSubmit={handleUpdateUser} */>
+   <form  /* onSubmit={handleAddItems} */ >
    <input type="text" name="quantity" placeholder='quantity' required />
    
    <input className="bg-success text-white mb-4 fw-bolder rounded px-4 py-1 border-0" type="submit" value="ReStok" />
