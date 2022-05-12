@@ -1,6 +1,6 @@
 import Button from '@restart/ui/esm/Button';
 import React, { useRef, useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Spinner } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link,useNavigate,useLocation } from 'react-router-dom';
 
@@ -68,7 +68,7 @@ const Login = () => {
                 </Form.Group>
                 <p style={{color:'red'}}>{error?.message}</p>
                 {
-             loading && <p>loading...</p>
+             loading &&  <Spinner animation="border" variant="success" />
          }
                 
                 <Button className="btn-info  rounded border-0 py-2 w-50 fw-bolder mx-auto d-block mb-2" type="submit">

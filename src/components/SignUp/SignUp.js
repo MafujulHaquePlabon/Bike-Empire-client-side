@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import { Navigate, useNavigate } from 'react-router';
+import { Spinner } from 'react-bootstrap';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import {  useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import "./SignUp.css"
@@ -14,7 +15,7 @@ const SignUp = () => {
     const [error,setError]=useState('');
     const navigate= useNavigate();
 
-    const [CreateUserWithEmailAndPassword,user]= useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+    const [CreateUserWithEmailAndPassword,user,loading]= useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
 
     const handleEmailBlur=event=>{
         setEmail(event.target.value);
@@ -26,6 +27,7 @@ const SignUp = () => {
         setConfirmPassword(event.target.value)
     }
     if(user){
+       
         navigate("/Home");
         
     }
@@ -56,6 +58,9 @@ const SignUp = () => {
                 <input onBlur={handleConfirmPasswordBlur} type="password" name="password" id="" placeholder='Confirm Password' required />
                 <p style={{color:'red'}}>
              {error}
+             {
+             loading &&  <Spinner animation="border" variant="success" />
+         }
          </p>
              {/*    <input  onClick={() => setAgree(!agree)}  type="checkbox" name="terms" id="terms" /> */}
                {/*  <label className={agree ? 'ps-2': 'ps-2 text-danger'} htmlFor="terms">Accept Genius Car Terms and Conditions</label> */}
