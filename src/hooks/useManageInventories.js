@@ -11,12 +11,3 @@ const useManageInventories = () => {
     return[mInvItems,setMInvItems];
 };
 export default useManageInventories;
-
-/*  useEffect( () =>{
-         fetch('http://localhost:5000/ManageInventories')
-         .then(res => res.json())
-         .then(data => {
-            setManageInventories(data)
-            console.log('success')
-         });
-     }, [reload]); */
