@@ -15,7 +15,7 @@ useEffect( () =>{
         const proceed = window.confirm('Are you sure you want to delete?');
         if(proceed){
             console.log('deleting user with id, ', id);
-            const url = `http://localhost:5000/ManageInventories/${id}`;
+            const url = `https://aqueous-tundra-23230.herokuapp.com/ManageInventories/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
