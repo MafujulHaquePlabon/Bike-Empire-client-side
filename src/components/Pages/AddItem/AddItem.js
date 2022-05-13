@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import useManageInventories from '../../../hooks/useManageInventories';
 
 const AddItem = (props) => {
      const {_id,name, img,description, price, quantity, supplier_name}=props.mInvItem ;
-     const [ManageInventories, setManageInventories] = useState([]);
-     useEffect( () =>{
-         fetch('http://localhost:5000/ManageInventories')
-         .then(res => res.json())
-         .then(data => setManageInventories(data));
-     }, []);
+    // const [ManageInventories, setManageInventories] = useState([]);
+    const [mInvItems,setMInvItems]=useManageInventories()
+     //const [reload,setIsReload]=useState(false)
+    
   const handleInventoryItemDelete=id=>{
     const proceed = window.confirm('Are you sure you want to delete?');
     if(proceed){
@@ -19,10 +18,14 @@ const AddItem = (props) => {
         })
         .then(res => res.json())
         .then(data =>{
+          
             if(data.deletedCount > 0){
+               
                 console.log('deleted');
-                const remaining = ManageInventories.filter(ManageInventorie => ManageInventorie._id !== id);
-                setManageInventories(remaining);
+                const remaining = mInvItems.filter(ManageInventorie => ManageInventorie._id !== id);
+                //setIsReload(!reload)
+                setMInvItems(remaining);
+                
              }
             }
         )

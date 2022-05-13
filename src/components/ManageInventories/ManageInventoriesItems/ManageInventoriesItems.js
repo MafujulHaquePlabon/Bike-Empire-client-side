@@ -5,6 +5,7 @@ import { Table } from 'react-bootstrap';
 const ManageInventoriesItems = (props) => {
      const {_id,name, img,description, price, quantity, supplier_name}=props.mInvItem ;
      const [ManageInventories, setManageInventories] = useState([]);
+    
 useEffect( () =>{
     fetch('http://localhost:5000/ManageInventories')
     .then(res => res.json())

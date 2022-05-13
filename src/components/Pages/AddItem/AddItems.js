@@ -46,7 +46,7 @@ const AddItems = () => {
                 <input type="text" name="supplier_name" placeholder='Supplier_name' required />
                 <input type="text" name="description" placeholder='Description' required />
                 <br />
-                <input className="bg-success mt-2 mb-3 fw-bolder  py-2 px-3 text-white border-0 rounded" type="submit" value="Add User" />
+                <input className="bg-success mt-2 mb-3 fw-bolder  py-2 px-3 text-white border-0 rounded" type="submit" value="Add new item" />
             </form>
                <Table className="ms-auto"  striped bordered hover>
                <thead>
