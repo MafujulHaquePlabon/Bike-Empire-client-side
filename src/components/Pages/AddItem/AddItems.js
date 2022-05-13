@@ -8,14 +8,14 @@ const AddItems = () => {
     const handleAddInventoryItem = event =>{
         event.preventDefault();
         const name = event.target.name.value;
-        const image = event.target.image.value;
+        const img = event.target.img.value;
         const price = event.target.price.value;
         const quantity = event.target.quantity.value;
         const supplier_name = event.target.supplier_name.value;
         const description = event.target.description.value;
       
     
-        const inventoryItems = {name,image,price,quantity,supplier_name,description};
+        const inventoryItems = {name,img,price,quantity,supplier_name,description};
 
         // send data to the server
         fetch('http://localhost:5000/ManageInventories', {
@@ -40,7 +40,7 @@ const AddItems = () => {
            <form  onSubmit={handleAddInventoryItem} >
                 <input type="text" name="name" placeholder='Name' required />
                
-                <input type="url" name="image" placeholder='Image' required />
+                <input type="url" name="img" placeholder='Image' required />
                 <input type="number" name="price" placeholder='Price' required />
                 <input type="number" name="quantity" placeholder='Quantity' required />
                 <input type="text" name="supplier_name" placeholder='Supplier_name' required />
