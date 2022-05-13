@@ -18,7 +18,7 @@ const AddItems = () => {
         const inventoryItems = {name,img,price,quantity,supplier_name,description};
 
         // send data to the server
-        fetch('http://localhost:5000/ManageInventories', {
+        fetch('https://aqueous-tundra-23230.herokuapp.com/ManageInventories', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
