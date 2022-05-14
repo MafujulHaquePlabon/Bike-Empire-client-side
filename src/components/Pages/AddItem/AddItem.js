@@ -38,7 +38,7 @@ const AddItem = (props) => {
           <tr>
             <td style={{width:100}} >{name}</td>
             <td style={{width:100}}><img style={{width:"60px"}} src={img} alt="" /></td>
-            <td style={{width:100}}>{price}</td>
+            <td style={{width:100}}>{price} BDT</td>
             <td style={{width:100}}>{quantity}</td>
             <td style={{width:100}}>{supplier_name}</td>
           <td style={{width:100}}><button onClick={()=>handleInventoryItemDelete(_id)} className="bg-danger border-0 rounded text-white fw-bolder">Delete <svg style={{width:25}} xmlns="http://www.w3.org/2000/svg" className="h-6 bg-danger w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

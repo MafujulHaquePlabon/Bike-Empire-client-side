@@ -40,7 +40,7 @@ const AddItems = () => {
            <form  onSubmit={handleAddInventoryItem} >
                 <input type="text" name="name" placeholder='Name' required />
                
-                <input type="url" name="img" placeholder='Image' required />
+                <input type="url" name="img" placeholder='Image url' required />
                 <input type="number" name="price" placeholder='Price' required />
                 <input type="number" name="quantity" placeholder='Quantity' required />
                 <input type="text" name="supplier_name" placeholder='Supplier_name' required />

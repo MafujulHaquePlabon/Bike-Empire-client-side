@@ -22,7 +22,7 @@ const InventoryItem = (props) => {
       <Card.Title>Name: {name}</Card.Title>
    
          <div>
-         <h5>Price: <span>{price}</span> </h5>
+         <h5>Price: {price} BDT </h5>
           <h5>Quantity: {quantity}</h5>
            <div><span className="fw-bold">Description:</span> {description}</div>
           <h5>Supplier_name: {supplier_name}</h5>
