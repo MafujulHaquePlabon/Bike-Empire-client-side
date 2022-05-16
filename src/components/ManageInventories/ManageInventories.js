@@ -17,9 +17,9 @@ const ManageInventories = () => {
           <h2 className="mt-5 text-success ">Manage Inventories</h2>
           
            <div  className="mt-5" >
-               <Table className="ms-auto"  striped bordered hover>
-               <thead>
-          <tr className="">
+               <Table   striped bordered hover>
+               <thead className="">
+          <tr >
             <th className="ps-5" style={{width:100}}> Product Name</th>
             <th style={{width:100}}> Image</th>
             <th style={{width:100}}>Price</th>
