@@ -58,8 +58,8 @@ const ManageItems = () => {
           <h2 className="mt-5 text-success ">Manage Items :  </h2>
  <div className="w-50 mx-auto h-50">                    
 <CardGroup >
-  <Card  style={{height:"780px"}} >
-    <Card.Img className="h-50" variant="top" src={mItems.img} />
+  <Card  style={{height:"880px"}} >
+    <Card.Img className="h-50 w-50 mx-auto" variant="top" src={mItems.img} />
     <Card.Body>
       <Card.Title>Name: {mItems.name}</Card.Title>
    
@@ -67,7 +67,7 @@ const ManageItems = () => {
          <h5>Price: <span>{mItems.price} BDT</span> </h5>
           <h5>Quantity: {mItems.quantity}</h5>
            <div><span className="fw-bold">Description:</span> {mItems.description}</div>
-          <h5>Supplier_name: {mItems.supplier_name}</h5>
+          <h6 className="my-3">Supplier_name: {mItems.supplier_name}</h6>
          </div>
          <div>
          <Button  onClick={handleDeliveredInventoryItem}   className="bg-success text-white fw-bolder rounded px-4 py-2 border-0 mb-3 " >Delivered</Button>
