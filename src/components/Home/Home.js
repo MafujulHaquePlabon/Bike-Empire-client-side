@@ -7,7 +7,7 @@ import UserNeedKnown from './UserNeedKnown/UserNeedKnown';
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Banner></Banner>
             <InventoryItems></InventoryItems>
             <BikeBrand></BikeBrand>

@@ -12,7 +12,9 @@ const Banner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3 className="text-success">Welcome to Website</h3>
+      <h3 className="fw-bold"> Bike Stock</h3>
+      <p>Explore the vast model range of new Bikes by widely know manufactures on our website.</p>
+      <button className="border-0 px-3 py-2 rounded fw-bolder" type="submit">Explore more</button>
       <h5 className="text-success"></h5>
     </Carousel.Caption>
   </Carousel.Item>
@@ -24,7 +26,9 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h3 className="text-success">Welcome to Website</h3>
+    <h3 className="fw-bold"> Bike Stock</h3>
+      <p>Explore the vast model range of new Bikes by widely know manufactures on our website.</p>
+      <button className="border-0 px-3 py-2 rounded fw-bolder" type="submit">Explore more</button>
       <h5 className="text-success"></h5>
     </Carousel.Caption>
   </Carousel.Item>
@@ -36,7 +40,9 @@ const Banner = () => {
     />
 
     <Carousel.Caption>
-      <h3 className="text-success">Welcome to Website</h3>
+    <h3 className="fw-bold"> Bike Stock</h3>
+      <p>Explore the vast model range of new Bikes by widely know manufactures on our website.</p>
+      <button className="border-0 px-3 py-2 rounded fw-bolder" type="submit">Explore more</button>
       <h5 className="text-success"></h5>
     </Carousel.Caption>
   </Carousel.Item>

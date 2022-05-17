@@ -18,7 +18,10 @@ const Header = () => {
                <Navbar collapseOnSelect expand="lg"   bg="success" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                    <img height={32}  className='rounded' src={`https://spng.subpng.com/20190626/ryc/kisspng-motorcycle-decal-sport-bike-sticker-yamaha-yzf-r6-5d13f9a6bc1395.5887965815615901827704.jpg`} alt="" />
+                   <div className="d-flex">
+                   <img height={35}  className='rounded ' src={`https://spng.subpng.com/20190626/ryc/kisspng-motorcycle-decal-sport-bike-sticker-yamaha-yzf-r6-5d13f9a6bc1395.5887965815615901827704.jpg`} alt="" />
+                    <h4 className="ms-3">Bike Stock</h4>
+                   </div>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -28,7 +31,7 @@ const Header = () => {
                            
                         </Nav>
                         <Nav>
-                        <Nav.Link className="fw-bolder hover:text-white"as={Link} to="Home" >Home</Nav.Link>
+                        <Nav.Link className="fw-bolder hover:text-white "as={Link} to="Home" >Home</Nav.Link>
                         <Nav.Link className="fw-bolder hover:text-white"as={Link} to="ContactUs" >Contact_Us</Nav.Link>
                        <Nav.Link className="fw-bolder hover:text-white"as={Link} to="ManageInventories" >Manage_Inventories</Nav.Link>
                           
