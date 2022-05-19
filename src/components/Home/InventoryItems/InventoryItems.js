@@ -20,7 +20,7 @@ const InventoryItems = () => {
                 <InventoryItem key={item._id} item={item}></InventoryItem>).slice(0,6)
                
            }
-        
+         
        </div>
        <button className=' my-5 fw-bolder bgclr py-2 px-3 text-white border-0 rounded' onClick={navigateManageInventories} type="submit" >Manage_Inventories</button>
       </div>

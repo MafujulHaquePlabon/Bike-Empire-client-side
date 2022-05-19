@@ -27,7 +27,7 @@ const AddItems = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log('success', data);
+          
             alert('InventoryItems added successfully!!!');
             event.target.reset();
         })
@@ -62,8 +62,10 @@ const AddItems = () => {
        
                </Table>
            {
-               mInvItems.map(mInvItem=> <AddItem key={mInvItem._id} mInvItem={mInvItem}></AddItem> )
+               mInvItems.map(mInvItem=> <AddItem key={mInvItem._id} mInvItem={mInvItem}></AddItem>)
+               
            }
+           
        </div>
        
       </div>

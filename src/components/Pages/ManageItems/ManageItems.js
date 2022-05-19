@@ -59,7 +59,7 @@ const ManageItems = () => {
  <div className="w-50 mx-auto h-50">                    
 <CardGroup >
   <Card  style={{height:"880px"}} >
-    <Card.Img className="h-50 w-50 mx-auto" variant="top" src={mItems.img} />
+    <Card.Img className="h-50 w-75 mx-auto" variant="top" src={mItems.img} />
     <Card.Body>
       <Card.Title>Name: {mItems.name}</Card.Title>
    

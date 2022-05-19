@@ -12,6 +12,3 @@ const useInventoryItems = () => {
 };
 
 export default useInventoryItems;
-
-/*` https://aqueous-tundra-23230.herokuapp.com/inventoryItems` */
-/* 'http://localhost:5000/inventoryItems' */

@@ -1,9 +1,11 @@
 import React from 'react';
 
 const MyItems = () => {
+
     return (
         <div>
-            <h1>MyItems</h1>
+            <h1>My Items</h1>
+           
         </div>
     );
 };
