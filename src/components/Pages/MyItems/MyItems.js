@@ -4,7 +4,7 @@ const MyItems = () => {
 
     return (
         <div>
-            <h1>My Items</h1>
+            <h1>This is My Items section</h1>
            
         </div>
     );
